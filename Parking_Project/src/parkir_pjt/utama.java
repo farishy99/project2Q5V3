@@ -33,6 +33,7 @@ public class utama extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         mnParkir = new javax.swing.JMenu();
         mnPendapatan = new javax.swing.JMenu();
+        mnAdmin = new javax.swing.JMenu();
         mnKeluar = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -71,6 +72,15 @@ public class utama extends javax.swing.JFrame {
             }
         });
         jMenuBar1.add(mnPendapatan);
+
+        mnAdmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Admin Update.png"))); // NOI18N
+        mnAdmin.setText("Admin Update");
+        mnAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                mnAdminMousePressed(evt);
+            }
+        });
+        jMenuBar1.add(mnAdmin);
 
         mnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Out.png"))); // NOI18N
         mnKeluar.setText("Keluar");
@@ -116,6 +126,10 @@ public class utama extends javax.swing.JFrame {
         new fPendapatan(this, true).setVisible(true);
     }//GEN-LAST:event_mnPendapatanMousePressed
 
+    private void mnAdminMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnAdminMousePressed
+      new fUser().setVisible(true);
+    }//GEN-LAST:event_mnAdminMousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -155,6 +169,7 @@ public class utama extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenu mnAdmin;
     private javax.swing.JMenu mnKeluar;
     private javax.swing.JMenu mnParkir;
     private javax.swing.JMenu mnPendapatan;

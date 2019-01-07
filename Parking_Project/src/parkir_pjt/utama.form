@@ -26,6 +26,17 @@
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mnPendapatanMousePressed"/>
           </Events>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="mnAdmin">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icon/Admin Update.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Admin Update"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="mnAdminMousePressed"/>
+          </Events>
+        </Menu>
         <Menu class="javax.swing.JMenu" name="mnKeluar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
